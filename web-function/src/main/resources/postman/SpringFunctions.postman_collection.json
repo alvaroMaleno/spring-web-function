@@ -1,0 +1,77 @@
+{
+	"info": {
+		"_postman_id": "dcd717fa-91e7-40b2-b300-2319b42c4da5",
+		"name": "SpringFunctions",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11044164"
+	},
+	"item": [
+		{
+			"name": "retrieveStation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "112C"
+				},
+				"url": {
+					"raw": "localhost:8080/retrieveStation",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retrieveStation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "retrieveStation Get",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/retrieveStation/112C",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retrieveStation",
+						"112C"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "retrieveStation Get default",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "112C"
+				},
+				"url": {
+					"raw": "localhost:8080",
+					"host": [
+						"localhost"
+					],
+					"port": "8080"
+				}
+			},
+			"response": []
+		}
+	]
+}
