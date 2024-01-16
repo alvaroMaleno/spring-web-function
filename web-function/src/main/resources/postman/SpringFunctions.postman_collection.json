@@ -72,6 +72,105 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "processTollRecords",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"stationId\": \"111c\",\n    \"licensePlate\": \"SPRINGVLR\",\n    \"timestamp\": \"2024-01-16T08:00:00\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/processTollRecord",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"processTollRecord"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "processTollRecordsReactive",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"stationId\": \"111D\",\n    \"licensePlate\": \"SPRINGVLRSS\",\n    \"timestamp\": \"2024-01-16T08:00:00\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/processTollRecordReactive",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"processTollRecordReactive"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "processListOfTollRecordsReactive",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n    \"stationId\": \"111c\",\n    \"licensePlate\": \"SPRINGVLR\",\n    \"timestamp\": \"2024-01-16T08:00:00\"\n    },\n    {\n    \"stationId\": \"111D\",\n    \"licensePlate\": \"SPRINGVLRSS\",\n    \"timestamp\": \"2024-01-16T08:00:00\"\n}\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/processListofTollRecordsReactive",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"processListofTollRecordsReactive"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getTollStations",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/getTollStations",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getTollStations"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
